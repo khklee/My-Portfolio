@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #f8edeb;
+    --secondary-color: #fec5bb;
+    --tertiary-color: #6d6875;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* HEADER STYLES */
+
+.header {
+    background-color: var(--tertiary-color);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav ul li a {
+    padding: 0 20px 0 20px;
+    font-size: 1.75vw;
+    color: var(--primary-color);
+}
+
+/* HERO STYLES */
+
+.hero {
+    background-image: url("../images/hero.jpg"); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 20vw;
+}

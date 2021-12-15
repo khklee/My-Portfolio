@@ -81,7 +81,7 @@ body {
 }
 
 .detail {
-    flex: 1 0 50% ;
+    flex: 1 0 50%;
     padding: 30px;
 }
 
@@ -89,6 +89,6 @@ body {
 
 .avatar {
     margin-top: 90px;
-    
-
 }
+
+/* WORK STYLES */

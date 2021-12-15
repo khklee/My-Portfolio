@@ -69,6 +69,7 @@ body {
     justify-content: space-between;
     margin: 20px;
     
+    
 }
 
 .title {
@@ -80,15 +81,54 @@ body {
     padding-right: 30px;
 }
 
-.detail {
-    flex: 1 0 50%;
-    padding: 30px;
-}
-
 /* ABOUT ME STYLES */
 
+.intro {
+    flex: 1 0 50%;
+    padding: 30px 10px;
+}
+
 .avatar {
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 /* WORK STYLES */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    text-align: right;
+    flex: 0 1 10%;
+}
+
+.primary-work {
+    padding: 30px 130px;
+    
+}
+
+.primary-work-image {
+    position: relative;
+    
+}
+
+
+.primary-work-image img {
+    border: 7px solid var(--quaternary-color);
+    
+}
+
+.primary-work-detail {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    border: 2px solid var(--quaternary-color);
+    padding: 8px;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+    
+}
+
+.secondary-work {
+    width: 50%;
+}

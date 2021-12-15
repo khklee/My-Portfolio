@@ -2,6 +2,7 @@
     --primary-color: #f8edeb;
     --secondary-color: #fec5bb;
     --tertiary-color: #6d6875;
+    --quaternary-color: #b5838d;
 }
 
 body {
@@ -49,4 +50,13 @@ body {
     background-position: center;
     display: flex;
     height: 20vw;
+    position: relative;
+}
+
+.hero h1 {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    color: var(--quaternary-color);
+    font-size: 1.75vw;
 }

@@ -131,14 +131,12 @@ body {
     align-content: stretch;
     justify-content: center;
     margin: -10px 0 0 14px;
-    
 }
 
 .work-image {
     margin: -5px -10px 15px 0px;
     padding-right: 25px;
     position: relative;
-    
 }
 
 .work-image img {
@@ -177,4 +175,18 @@ body {
     
     font-size: 1.75vw;
     color: var(--quaternary-color);
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer h3 {
+    color: var(--secondary-color);
 }

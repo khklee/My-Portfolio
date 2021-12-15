@@ -157,3 +157,24 @@ body {
     color: var(--secondary-color);
     text-align: center;
 }
+
+/* REACH OUT STYLES */
+
+.reach-out {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 79%;
+}
+
+.contacts {
+    
+    align-content: center;
+}
+
+.contacts a {
+    
+    font-size: 1.75vw;
+    color: var(--quaternary-color);
+}

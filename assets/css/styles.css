@@ -89,7 +89,7 @@ body {
 }
 
 .avatar {
-    margin-top: 50px;
+    align-self: center;
 }
 
 /* WORK STYLES */
@@ -101,15 +101,13 @@ body {
 }
 
 .primary-work {
-    padding: 30px 130px;
-    justify-content: right;
-    text-align: right;
-    
+    width: 87%;
+    margin: 50px 0 0 60px; 
+    margin-bottom: -35px;   
 }
 
 .primary-work-image {
     position: relative;
-    flex: 0 0 900px;
 }
 
 .primary-work-image img {
@@ -131,14 +129,15 @@ body {
 .secondary-work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: -10px;
+    margin: 50px;
+    width: 90%;
 }
 
 .work-image {
     position: relative;
-    flex: 0 0 590px;
-    margin: 0 30px 18px 0;
+    width: 47%;
+    margin: 10px 20px 10px 10px;
+    
 }
 
 .work-image img {

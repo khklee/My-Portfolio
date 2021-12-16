@@ -67,12 +67,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex: 1;
     margin: 20px;
-    
-    
 }
 
 .title {
+    display: flex;
+    flex-wrap: wrap;
     border-right: 3px solid var(--tertiary-color);
     font-size: 1.75vw;
     flex: 0 1 15%;
@@ -83,9 +84,15 @@ body {
 
 /* ABOUT ME STYLES */
 
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+
 .intro {
-    flex: 1 0 50%;
-    padding: 30px 10px;
+    width: 80%;
 }
 
 .avatar {
@@ -98,24 +105,32 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    justify-content: center;
+    margin: 10px;
 }
 
 .primary-work {
-    width: 87%;
-    margin: 50px 0 0 60px; 
-    margin-bottom: -35px;   
+    width: 90%;
 }
 
 .primary-work-image {
     position: relative;
 }
 
-.primary-work-image img {
+.primary-work-image img,
+.work-image img {
     border: 7px solid var(--quaternary-color);
     width: 100%;
+    opacity: 0.5;
 }
 
-.primary-work-detail {
+.primary-work-image img:hover,
+.work-image img:hover {
+    opacity: 1;
+}
+
+.primary-work-detail,
+.work-detail {
     position: absolute;
     bottom: 40px;
     left: 0px;
@@ -129,31 +144,13 @@ body {
 .secondary-work {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;
+    justify-content: space-between;
     width: 90%;
 }
 
 .work-image {
     position: relative;
-    width: 47%;
-    margin: 10px 20px 10px 10px;
-    
-}
-
-.work-image img {
-    border: 7px solid var(--quaternary-color);
-    width: 100%;
-}
-
-.work-detail {
-    position: absolute;
-    bottom: 40px;
-    left: 0px;
-    border: 2px solid var(--quaternary-color);
-    padding: 8px;
-    background-color: var(--quaternary-color);
-    color: var(--secondary-color);
-    text-align: center;
+    width: 49%;
 }
 
 /* REACH OUT STYLES */
@@ -167,12 +164,10 @@ body {
 }
 
 .contacts {
-    
     align-content: center;
 }
 
 .contacts a {
-    
     font-size: 1.75vw;
     color: var(--quaternary-color);
 }
@@ -190,3 +185,66 @@ footer {
 footer h3 {
     color: var(--secondary-color);
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+    .about-me {
+        width: 77%;
+    }
+    
+    .intro {
+        width: 68%;
+    }
+
+    .work-image {
+        width: 48%;
+    }
+
+    .primary-work-detail,
+    .work-detail {
+        width: 77px;
+        height: 57px;
+    }
+
+    .primary-work-detail h3,
+    .work-detail h3 {
+        font-size: 15px;
+        margin: 2px 0 5px 0px;
+    }
+
+    .primary-work-detail p,
+    .work-detail p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .reach-out {
+        width: 75%;
+    }
+
+    .contacts a {
+        font-size: 2vw;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 60%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+    .header h1 {
+        margin-top: 10px;
+    }
+
+    .header nav ul li a {
+        font-size: 15px;
+    }
+}
+    

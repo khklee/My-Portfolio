@@ -97,21 +97,24 @@ body {
 .work {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 1 0;
+    flex: 1;
 }
 
 .primary-work {
     padding: 30px 130px;
     justify-content: right;
     text-align: right;
+    
 }
 
 .primary-work-image {
     position: relative;
+    flex: 0 0 900px;
 }
 
 .primary-work-image img {
     border: 7px solid var(--quaternary-color);
+    width: 100%;
 }
 
 .primary-work-detail {
@@ -128,21 +131,19 @@ body {
 .secondary-work {
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
     justify-content: center;
-    margin: -10px 0 0 14px;
+    margin: -10px;
 }
 
 .work-image {
-    margin: -5px -10px 15px 0px;
-    padding-right: 25px;
     position: relative;
+    flex: 0 0 590px;
+    margin: 0 30px 18px 0;
 }
 
 .work-image img {
     border: 7px solid var(--quaternary-color);
-    width: 585px;
-    height: 230px;
+    width: 100%;
 }
 
 .work-detail {
